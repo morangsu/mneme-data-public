@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "name": "mneme-data-public",
-  "version": "0.3.1",
-  "generated_at": "2026-11-09T12:27:06.034Z",
+  "version": "0.3.2",
+  "generated_at": "2026-11-09T13:19:32.210Z",
   "files": [
     {
       "path": "botany.toml",
@@ -16,8 +16,8 @@
     },
     {
       "path": "materia-medica.toml",
-      "bytes": 4956,
-      "sha256": "eeb022af266f1e450c89658781abedb5c7a7960486931fe5e4a89e422c8530d8"
+      "bytes": 5227,
+      "sha256": "5d14767bc7ea3e089c0113bbc9d6c48ded7be9c481c03aae3d94ee62311acadb"
     },
     {
       "path": "neijing.toml",
