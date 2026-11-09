@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "name": "mneme-data",
+  "version": "0.1.0",
+  "generated_at": "2026-11-09T08:42:17.969Z",
+  "files": [
+    {
+      "path": "botany.toml",
+      "bytes": 2599,
+      "sha256": "57743d1ce42b70cf18a3db0d43d24df7eaedb23f9b11d54b19e7ec1d64cefd3d"
+    },
+    {
+      "path": "dietetics.toml",
+      "bytes": 2691,
+      "sha256": "11f709fdb6aa38a67047c32ffb6d10235e8b749b60a376469a057cf5808daae3"
+    },
+    {
+      "path": "materia-medica.toml",
+      "bytes": 4068,
+      "sha256": "3286ca0011ce9210090487ed93c8e7fde9c63cabb40470e98fa2c5ee84894b24"
+    },
+    {
+      "path": "neijing.toml",
+      "bytes": 2417,
+      "sha256": "dad393fd52a58c33e84fe86f5abbf57a8a858eecd14cad9b1518dc235a0fbdfc"
+    },
+    {
+      "path": "sample-herbs.csv",
+      "bytes": 2720,
+      "sha256": "ea300b44c50bf88dcc086a55467bb0e716dece38f26aabfe4dcd8f6849560c32"
+    },
+    {
+      "path": "user-edit-sample.csv",
+      "bytes": 115,
+      "sha256": "60fa800534782b15bbe509879f687cc7ec1d82ad1a548c5afdae710dc694aec7"
+    }
+  ]
+}
