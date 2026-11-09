@@ -1,8 +1,8 @@
-# mneme-data · 开放基础知识库
+# mneme-data-public · 开放基础知识库
 
 本仓库是 [mneme](https://github.com/morangsu/mneme) 的**公共基础数据库**。只放"所有人都能共用"的内容：领域 schema（`*.toml`）与基础条目数据（`*.csv`）。
 
-个性化调整、学习进度、复习记录、同步日志一律**不进这里**，它们属于个人的私有库（`mneme-vault`）。
+个性化调整、学习进度、复习记录、同步日志一律**不进这里**，它们属于个人的私有库（`mneme-data-private`）。
 
 ## 目录约定
 
@@ -34,7 +34,8 @@ manifest.json   清单：版本号 + 文件列表 + 校验值
 
 ```bash
 # 在 mneme 工程目录下，把公共库克隆成它的 domains/
-git clone https://github.com/morangsu/mneme-data domains
+# （github.com 的 git 传输若不通，可用 API 下载 tarball，见文末）
+git clone https://github.com/morangsu/mneme-data-public domains
 
 # 生成公共包（维护者）
 mneme upstream-publish --domains domains --out data/upstream/public-bundle.json --rev <n>

@@ -1,0 +1,311 @@
+{
+  "format": "mneme-public/1",
+  "rev": 3,
+  "schema_id": "materia-medica",
+  "published_at": 1794217861239,
+  "entities": [
+    {
+      "id": "桂枝",
+      "kind": "herb",
+      "group_id": "发散风寒药",
+      "fields": {
+        "canonical": "发汗解表温通经脉助阳化气",
+        "compatibility": "畏赤石脂",
+        "contraindications": [
+          "温热病",
+          "阴虚阳盛",
+          "血热妄行"
+        ],
+        "decoction": "不宜久煎",
+        "differential": "与麻黄鉴别在表虚有汗与表实无汗",
+        "dosage": "3-10g",
+        "effects": [
+          "发汗解表",
+          "温通经脉",
+          "助阳化气"
+        ],
+        "features": [
+          "表虚有汗",
+          "解肌",
+          "调和营卫"
+        ],
+        "group_name": "发散风寒药",
+        "indications": [
+          "风寒表虚有汗",
+          "寒凝血滞",
+          "阳虚水停"
+        ],
+        "name": "桂枝",
+        "nature": "辛甘温归心肺膀胱经",
+        "toxicity": "无"
+      },
+      "source": {
+        "page": 47
+      },
+      "rev": 8,
+      "updated_at": 1794217855875,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "生姜",
+      "kind": "herb",
+      "group_id": "发散风寒药",
+      "fields": {
+        "canonical": "生用|煨用",
+        "compatibility": "不宜与黄芩黄连同用（降低药效）",
+        "contraindications": [
+          "阴虚内热",
+          "实热证"
+        ],
+        "decoction": "生用偏于发散",
+        "differential": "煨用偏于温中",
+        "dosage": "3-10g",
+        "effects": [
+          "解表散寒",
+          "温中止呕",
+          "化痰止咳",
+          "解鱼蟹毒"
+        ],
+        "features": [
+          "呕家圣药",
+          "发汗力弱"
+        ],
+        "group_name": "发散风寒药",
+        "indications": [
+          "风寒感冒",
+          "胃寒呕吐",
+          "寒痰咳嗽"
+        ],
+        "name": "生姜",
+        "nature": "辛温归肺脾胃经",
+        "toxicity": "无"
+      },
+      "source": {
+        "page": 48
+      },
+      "rev": 7,
+      "updated_at": 1794215948134,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "薄荷",
+      "kind": "herb",
+      "group_id": "发散风热药",
+      "fields": {
+        "canonical": "疏散风热清利头目利咽透疹疏肝行气",
+        "compatibility": "无特殊",
+        "contraindications": [
+          "表虚自汗",
+          "阴虚血燥"
+        ],
+        "decoction": "后下",
+        "differential": "与荆芥鉴别在辛凉与辛温",
+        "dosage": "3-6g",
+        "effects": [
+          "疏散风热",
+          "清利头目",
+          "利咽透疹",
+          "疏肝行气"
+        ],
+        "features": [
+          "辛凉",
+          "芳香"
+        ],
+        "group_name": "发散风热药",
+        "indications": [
+          "风热表证",
+          "头痛目赤",
+          "咽喉肿痛",
+          "麻疹不透"
+        ],
+        "name": "薄荷",
+        "nature": "辛凉归肺肝经",
+        "toxicity": "无"
+      },
+      "source": {
+        "page": 62
+      },
+      "rev": 2,
+      "updated_at": 1794215130969,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "麻黄",
+      "kind": "herb",
+      "group_id": "发散风寒药",
+      "fields": {
+        "canonical": "发汗解表宣肺平喘利水消肿",
+        "compatibility": "不宜与洋地黄类同用",
+        "contraindications": [
+          "表虚自汗",
+          "阴虚盗汗",
+          "肾虚喘咳"
+        ],
+        "decoction": "先煎去上沫",
+        "differential": "与桂枝鉴别在表实无汗与表虚有汗",
+        "dosage": "2-10g",
+        "effects": [
+          "发汗解表",
+          "宣肺平喘",
+          "利水消肿"
+        ],
+        "features": [
+          "表实无汗",
+          "发汗力强",
+          "善治风水浮肿"
+        ],
+        "group_name": "发散风寒药",
+        "indications": [
+          "风寒表实无汗",
+          "咳喘",
+          "风水水肿"
+        ],
+        "name": "麻黄",
+        "nature": "辛微苦温归肺膀胱经",
+        "toxicity": "无"
+      },
+      "source": {
+        "page": 45
+      },
+      "rev": 9,
+      "updated_at": 1794217855875,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "黄芩",
+      "kind": "herb",
+      "group_id": "清热燥湿药",
+      "fields": {
+        "canonical": "清热燥湿泻火解毒止血安胎",
+        "compatibility": "无特殊",
+        "contraindications": [
+          "脾胃虚寒"
+        ],
+        "decoction": "无特殊",
+        "differential": "与黄连鉴别在上焦与中焦",
+        "dosage": "3-10g",
+        "effects": [
+          "清热燥湿",
+          "泻火解毒",
+          "止血",
+          "安胎"
+        ],
+        "features": [
+          "清上焦肺",
+          "善安胎"
+        ],
+        "group_name": "清热燥湿药",
+        "indications": [
+          "湿温暑温",
+          "肺热咳嗽",
+          "血热吐衄",
+          "胎动不安"
+        ],
+        "name": "黄芩",
+        "nature": "苦寒归肺胆脾胃大肠小肠经",
+        "toxicity": "无"
+      },
+      "source": {
+        "page": 100
+      },
+      "rev": 4,
+      "updated_at": 1794215130969,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "黄芪",
+      "kind": "herb",
+      "group_id": "补虚药",
+      "fields": {
+        "canonical": "补气升阳固表止汗利水消肿",
+        "compatibility": "无特殊",
+        "contraindications": [
+          "表实邪盛",
+          "阴虚阳亢",
+          "疮疡初起"
+        ],
+        "decoction": "无特殊",
+        "differential": "与党参鉴别在升阳与健脾",
+        "dosage": "9-30g",
+        "effects": [
+          "补气升阳",
+          "固表止汗",
+          "利水消肿",
+          "生津养血",
+          "托毒排脓",
+          "敛疮生肌"
+        ],
+        "features": [
+          "补而不腻",
+          "升提"
+        ],
+        "group_name": "补虚药",
+        "indications": [
+          "脾虚气虚",
+          "自汗",
+          "气虚水肿",
+          "久溃不敛"
+        ],
+        "name": "黄芪",
+        "nature": "甘微温归脾肺经",
+        "toxicity": "无"
+      },
+      "source": {
+        "page": 312
+      },
+      "rev": 5,
+      "updated_at": 1794215130969,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "黄连",
+      "kind": "herb",
+      "group_id": "清热燥湿药",
+      "fields": {
+        "canonical": "清热燥湿泻火解毒",
+        "compatibility": "不宜与洋地黄类同用",
+        "contraindications": [
+          "脾胃虚寒",
+          "阴虚津伤"
+        ],
+        "decoction": "无特殊",
+        "differential": "与黄芩黄柏鉴别在归经与上中下焦",
+        "dosage": "2-5g",
+        "effects": [
+          "清热燥湿",
+          "泻火解毒"
+        ],
+        "features": [
+          "苦寒力强",
+          "清心胃"
+        ],
+        "group_name": "清热燥湿药",
+        "indications": [
+          "湿热痞满",
+          "呕吐吞酸",
+          "泻痢",
+          "高热神昏",
+          "痈肿疔疮"
+        ],
+        "name": "黄连",
+        "nature": "苦寒归心脾胃肝胆大肠经",
+        "toxicity": "无"
+      },
+      "source": {
+        "page": 98
+      },
+      "rev": 6,
+      "updated_at": 1794215130969,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "2018cfc8bb642772913e50f5ce1b5fd52234af3640717882962ec5c9ced16b79"
+}

@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "name": "mneme-data",
-  "version": "0.1.0",
-  "generated_at": "2026-11-09T08:42:17.969Z",
+  "name": "mneme-data-public",
+  "version": "0.3.1",
+  "generated_at": "2026-11-09T12:27:06.034Z",
   "files": [
     {
       "path": "botany.toml",
@@ -16,8 +16,8 @@
     },
     {
       "path": "materia-medica.toml",
-      "bytes": 4068,
-      "sha256": "3286ca0011ce9210090487ed93c8e7fde9c63cabb40470e98fa2c5ee84894b24"
+      "bytes": 4956,
+      "sha256": "eeb022af266f1e450c89658781abedb5c7a7960486931fe5e4a89e422c8530d8"
     },
     {
       "path": "neijing.toml",
@@ -26,13 +26,19 @@
     },
     {
       "path": "sample-herbs.csv",
-      "bytes": 2720,
-      "sha256": "ea300b44c50bf88dcc086a55467bb0e716dece38f26aabfe4dcd8f6849560c32"
+      "bytes": 3231,
+      "sha256": "37a7f558fea9b65d52f78c72466257233b4b7a4a325a8854f0d9f43f4f29f455"
     },
     {
       "path": "user-edit-sample.csv",
       "bytes": 115,
       "sha256": "60fa800534782b15bbe509879f687cc7ec1d82ad1a548c5afdae710dc694aec7"
     }
-  ]
+  ],
+  "bundle": {
+    "path": "bundle.json",
+    "bytes": 7817,
+    "sha256": "3a98d49b38af1ee8dd457176d42e2e4a50d48dd3b0cfe026748eaf41dc63a7d5",
+    "rev": 3
+  }
 }
