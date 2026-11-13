@@ -1,0 +1,108 @@
+# 中医诊断学：症状群 → 证型。核心是「同症异证」的辨析，
+# 大量证型共享症状（如「乏力」见于气虚/血虚/湿困），最能压测辨析题与歧义枚举。
+id = "diagnostics"
+name = "中医诊断学"
+version = 1
+description = "症状群推证型；同症异证的鉴别是核心难点，辨析题密集。"
+
+[[entities]]
+kind = "pattern"
+label = "证型"
+primary = "name"
+group_kind = "category"
+
+[[entities.fields]]
+key = "name"
+label = "证型"
+kind = "text"
+indexable = true
+required = true
+
+[[entities.fields]]
+key = "category"
+label = "类别"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "main_signs"
+label = "主症"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "tongue"
+label = "舌象"
+kind = "text"
+indexable = true
+reversible = true
+immutable = true
+
+[[entities.fields]]
+key = "pulse"
+label = "脉象"
+kind = "text"
+indexable = true
+reversible = true
+immutable = true
+
+[[entities.fields]]
+key = "pathogenesis"
+label = "病机"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "differential"
+label = "类证鉴别"
+kind = "text"
+immutable = true
+
+[[entities.fields]]
+key = "canonical"
+label = "教材主表述"
+kind = "text"
+
+[[entities.fields]]
+key = "notes"
+label = "笔记"
+kind = "text"
+
+[[entities.fields]]
+key = "mastery"
+label = "掌握度"
+kind = "text"
+
+[[entities.fields]]
+key = "synonyms"
+label = "可替换说法"
+kind = "tags"
+
+[[entities.fields]]
+key = "boundary"
+label = "不可替换的边界"
+kind = "text"
+
+[[entities.directions]]
+id = "signs_to_pattern"
+label = "症状群推证型"
+clue_fields = ["main_signs", "tongue", "pulse"]
+answer_fields = ["name", "pathogenesis"]
+scope = "category"
+enumerate_if_ambiguous = true
+
+[[entities.directions]]
+id = "name_to_signs"
+label = "背主症"
+clue_fields = ["name"]
+answer_fields = ["main_signs"]
+cloze = true
+cloze_ratio = 0.3
+cloze_min_len = 8
+
+[[views]]
+id = "by-category"
+label = "按类别"
+columns = ["name", "main_signs", "tongue", "pulse", "differential"]
+group_by = "category"

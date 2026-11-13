@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "neijing",
+  "version": "0.5.0",
+  "files": [
+    {
+      "path": "data/sample-chapters.csv",
+      "bytes": 721,
+      "sha256": "ff203f3b521b7bd05886e49bbf7e67ccac2e024da322114d54f92e379cfb52de"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 2673,
+      "sha256": "b9d1343b0ead2c203e84c89baeb7df54417bfe3be30083e263b35cf8793155db"
+    },
+    {
+      "path": "README.md",
+      "bytes": 958,
+      "sha256": "342606aff9f419798e1e5a1bfcfcf5de994adbc8170f2b75ba678d1a89a0766b"
+    }
+  ]
+}

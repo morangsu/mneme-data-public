@@ -1,0 +1,200 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "formula",
+  "published_at": 1794562819050,
+  "entities": [
+    {
+      "id": "小柴胡汤",
+      "kind": "formula",
+      "group_id": "和解剂",
+      "fields": {
+        "canonical": "小柴胡汤主少阳证",
+        "contraindications": [
+          "阴虚血少"
+        ],
+        "decoction": "水煎去滓再煎",
+        "differential": "与大柴胡汤鉴别在有无阳明腑实",
+        "dosage": "柴胡24g|黄芩9g|人参9g|半夏9g",
+        "features": [
+          "往来寒热",
+          "胸胁苦满",
+          "口苦咽干"
+        ],
+        "indications": [
+          "伤寒少阳证",
+          "往来寒热",
+          "胸胁苦满"
+        ],
+        "name": "小柴胡汤"
+      },
+      "relations": [
+        {
+          "target": "柴胡",
+          "target_kind": "herb",
+          "role": "君",
+          "amount": "24g"
+        },
+        {
+          "target": "黄芩",
+          "target_kind": "herb",
+          "role": "臣",
+          "amount": "9g"
+        },
+        {
+          "target": "人参",
+          "target_kind": "herb",
+          "role": "佐",
+          "amount": "9g"
+        },
+        {
+          "target": "半夏",
+          "target_kind": "herb",
+          "role": "佐",
+          "amount": "9g"
+        },
+        {
+          "target": "炙甘草",
+          "target_kind": "herb",
+          "role": "使",
+          "amount": "9g"
+        },
+        {
+          "target": "生姜",
+          "target_kind": "herb",
+          "role": "佐",
+          "amount": "9g"
+        },
+        {
+          "target": "大枣",
+          "target_kind": "herb",
+          "role": "佐",
+          "amount": "12枚"
+        }
+      ],
+      "rev": 1,
+      "updated_at": 1794562819005,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "桂枝汤",
+      "kind": "formula",
+      "group_id": "解表剂",
+      "fields": {
+        "canonical": "桂枝汤主太阳中风表虚",
+        "contraindications": [
+          "表实无汗",
+          "温热病"
+        ],
+        "decoction": "水煎温服|啜热稀粥",
+        "differential": "与麻黄汤鉴别在有汗无汗",
+        "dosage": "桂枝9g|芍药9g|生姜9g|大枣12枚|甘草6g",
+        "features": [
+          "汗出恶风",
+          "脉浮缓"
+        ],
+        "indications": [
+          "外感风寒表虚证",
+          "头痛发热",
+          "汗出恶风"
+        ],
+        "name": "桂枝汤"
+      },
+      "relations": [
+        {
+          "target": "桂枝",
+          "target_kind": "herb",
+          "role": "君",
+          "amount": "9g"
+        },
+        {
+          "target": "芍药",
+          "target_kind": "herb",
+          "role": "臣",
+          "amount": "9g"
+        },
+        {
+          "target": "生姜",
+          "target_kind": "herb",
+          "role": "佐",
+          "amount": "9g"
+        },
+        {
+          "target": "大枣",
+          "target_kind": "herb",
+          "role": "佐",
+          "amount": "12枚"
+        },
+        {
+          "target": "甘草",
+          "target_kind": "herb",
+          "role": "使",
+          "amount": "6g"
+        }
+      ],
+      "rev": 2,
+      "updated_at": 1794562819005,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "麻黄汤",
+      "kind": "formula",
+      "group_id": "解表剂",
+      "fields": {
+        "canonical": "麻黄汤主太阳伤寒表实",
+        "contraindications": [
+          "表虚自汗",
+          "外感风热"
+        ],
+        "decoction": "水煎温服|覆取微汗",
+        "differential": "与桂枝汤鉴别在有汗无汗",
+        "dosage": "麻黄9g|桂枝6g|杏仁9g|甘草3g",
+        "features": [
+          "恶寒发热",
+          "无汗而喘",
+          "脉浮紧"
+        ],
+        "indications": [
+          "外感风寒表实证",
+          "恶寒发热",
+          "无汗而喘"
+        ],
+        "name": "麻黄汤"
+      },
+      "relations": [
+        {
+          "target": "麻黄",
+          "target_kind": "herb",
+          "role": "君",
+          "amount": "9g"
+        },
+        {
+          "target": "桂枝",
+          "target_kind": "herb",
+          "role": "臣",
+          "amount": "6g"
+        },
+        {
+          "target": "杏仁",
+          "target_kind": "herb",
+          "role": "佐",
+          "amount": "9g"
+        },
+        {
+          "target": "甘草",
+          "target_kind": "herb",
+          "role": "使",
+          "amount": "3g"
+        }
+      ],
+      "rev": 3,
+      "updated_at": 1794562819005,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "e15b9ce9bed5c91bcf3cd61cd72f6701f0a7abd53c3055fbb5ba9b75d2ab26b6"
+}

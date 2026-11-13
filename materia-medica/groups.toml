@@ -1,0 +1,65 @@
+# 中药学药群层级树（《中药学》教材分类）
+#
+# 药材 CSV 的 group_name 只写**叶子**名（如「发散风寒药」），
+# 中间层由本文件提供。改层级只改这里，不用动药材数据。
+
+[[groups]]
+id = "中药学"
+name = "中药学"
+note = "总目"
+
+# ---- 解表药 ----
+[[groups]]
+id = "解表药"
+name = "解表药"
+parent = "中药学"
+note = "凡以发散表邪、解除表证为主要功效的药物"
+
+[[groups]]
+id = "发散风寒药"
+name = "发散风寒药"
+parent = "解表药"
+note = "性味多辛温，发汗力较强"
+
+[[groups]]
+id = "发散风热药"
+name = "发散风热药"
+parent = "解表药"
+note = "性味多辛凉，发汗力较缓"
+
+# ---- 清热药 ----
+[[groups]]
+id = "清热药"
+name = "清热药"
+parent = "中药学"
+
+[[groups]]
+id = "清热泻火药"
+name = "清热泻火药"
+parent = "清热药"
+
+[[groups]]
+id = "清热燥湿药"
+name = "清热燥湿药"
+parent = "清热药"
+
+[[groups]]
+id = "清热解毒药"
+name = "清热解毒药"
+parent = "清热药"
+
+# ---- 补虚药 ----
+[[groups]]
+id = "补虚药"
+name = "补虚药"
+parent = "中药学"
+
+[[groups]]
+id = "补气药"
+name = "补气药"
+parent = "补虚药"
+
+[[groups]]
+id = "补血药"
+name = "补血药"
+parent = "补虚药"

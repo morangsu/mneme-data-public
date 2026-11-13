@@ -1,0 +1,103 @@
+# 生理学/生化学：以「过程」为基座，步骤顺序本身就是知识。
+# 设计要点：
+#   - [[entities.relations]] 的 target 是步骤名，order 是步骤序号（1 起）。
+#   - [[entities.directions]] 里 sequence = true 会生成「排正确顺序」题。
+id = "physiology"
+name = "生理学"
+version = 1
+description = "过程导向：通路/反射/调节链的顺序是核心考点，步骤可排序、可挖空。"
+
+[[entities]]
+kind = "process"
+label = "生理过程"
+primary = "name"
+group_kind = "category"
+
+[[entities.fields]]
+key = "name"
+label = "过程名"
+kind = "text"
+indexable = true
+required = true
+
+[[entities.fields]]
+key = "category"
+label = "类别"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "overview"
+label = "概述"
+kind = "text"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "key_points"
+label = "关键点"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "canonical"
+label = "教材主表述"
+kind = "text"
+
+[[entities.fields]]
+key = "notes"
+label = "笔记"
+kind = "text"
+
+[[entities.fields]]
+key = "mastery"
+label = "掌握度"
+kind = "text"
+
+[[entities.fields]]
+key = "synonyms"
+label = "可替换说法"
+kind = "tags"
+
+[[entities.fields]]
+key = "boundary"
+label = "不可替换的边界"
+kind = "text"
+
+# 步骤：有序关系（order 1..n）
+[[entities.relations]]
+id = "steps"
+label = "步骤"
+target_kind = "step"
+has_role = false
+has_amount = false
+indexable = true
+
+[[entities.directions]]
+id = "overview_to_name"
+label = "概述推过程"
+clue_fields = ["overview"]
+answer_fields = ["name", "category"]
+
+[[entities.directions]]
+id = "name_to_steps"
+label = "排步骤顺序"
+clue_fields = ["name"]
+answer_fields = ["name"]
+sequence = true
+
+[[entities.directions]]
+id = "name_to_overview"
+label = "背概述"
+clue_fields = ["name"]
+answer_fields = ["overview"]
+cloze = true
+cloze_ratio = 0.3
+cloze_min_len = 12
+
+[[views]]
+id = "by-category"
+label = "按类别"
+columns = ["name", "overview", "key_points"]
+group_by = "category"

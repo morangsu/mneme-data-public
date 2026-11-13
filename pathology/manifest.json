@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "pathology",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "data/sample-lesions.csv",
+      "bytes": 1951,
+      "sha256": "e4dc1e13c61b7c586a28ffa57ffc3bf3b17de3e1f138b132efa9b614ebfa82ff"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 2139,
+      "sha256": "6b29d56a61b86af21ff4d2651cb2d9d9054b16ca52d3d235097e7b8b01d6838d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 926,
+      "sha256": "e7df40c34470eea119231f53041058506942544a54b40ef2b83b8250796d25c1"
+    }
+  ]
+}

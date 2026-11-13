@@ -1,0 +1,80 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "diagnostics",
+  "published_at": 1794562818484,
+  "entities": [
+    {
+      "id": "心气虚",
+      "kind": "pattern",
+      "group_id": "虚证",
+      "fields": {
+        "canonical": "心气虚以心悸气短兼气虚为要点",
+        "differential": "与心血虚鉴别在有无失眠多梦",
+        "name": "心气虚"
+      },
+      "rev": 1,
+      "updated_at": 1794562818440,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "心血虚",
+      "kind": "pattern",
+      "group_id": "虚证",
+      "fields": {
+        "canonical": "心血虚以心悸失眠兼血虚为要点",
+        "differential": "与心气虚鉴别在有无心悸与神志症状",
+        "name": "心血虚"
+      },
+      "rev": 2,
+      "updated_at": 1794562818440,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "湿热蕴脾",
+      "kind": "pattern",
+      "group_id": "实证",
+      "fields": {
+        "canonical": "湿热蕴脾以黄腻苔为眼目",
+        "differential": "与寒湿困脾鉴别在苔黄与口渴",
+        "name": "湿热蕴脾"
+      },
+      "rev": 3,
+      "updated_at": 1794562818440,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "脾气虚",
+      "kind": "pattern",
+      "group_id": "虚证",
+      "fields": {
+        "canonical": "脾气虚以乏纳胀溏为要点",
+        "differential": "与脾阳虚鉴别在有寒象",
+        "name": "脾气虚"
+      },
+      "rev": 4,
+      "updated_at": 1794562818440,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "脾阳虚",
+      "kind": "pattern",
+      "group_id": "虚证",
+      "fields": {
+        "canonical": "脾阳虚必见寒象",
+        "differential": "与脾气虚鉴别在畏寒与腹痛喜温",
+        "name": "脾阳虚"
+      },
+      "rev": 5,
+      "updated_at": 1794562818440,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "6209210cce547e856fbdfeb62ee18a5267d12229021d4596edb2b721876d8eb2"
+}

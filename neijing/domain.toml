@@ -85,6 +85,16 @@ answer_fields = ["title", "gloss"]
 scope = "category"
 enumerate_if_ambiguous = true
 
+# P2-2 填空题：给篇名/主题，挖空原文让人填空（背条文）
+[[entities.directions]]
+id = "title_to_text"
+label = "背原文"
+clue_fields = ["title", "category"]
+answer_fields = ["text"]
+cloze = true
+cloze_ratio = 0.25
+cloze_min_len = 12
+
 [[entities.directions]]
 id = "theme_to_title"
 label = "主题推篇名"

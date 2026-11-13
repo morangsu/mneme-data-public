@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "physiology",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "data/sample-processes.csv",
+      "bytes": 1067,
+      "sha256": "e69dd23d7ef805b18ee9350ddef9aa7a6fea62fc41f567889ad219f51ff5ad01"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 2046,
+      "sha256": "ddadfd7528f1d99c2fe973a4297260af9af94c6f7417506ba655ef31472aed8d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1041,
+      "sha256": "914bacd9500b3f01cfac2fe23d96c7ff279629cb03b9e87dcc2eee9143c46a1d"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+# 方剂学：以「类方」为基座，组成与功用是双向可查的线索。
+# 设计要点：
+#   - 组成（composition）是**关系密集**字段：方 -> 多味药，且带君臣佐使角色。
+#     现有 schema 用 tags 表达「有哪些药」，但表达不了「每味药的角色」和剂量比例
+#     —— 这正是本次真实内容验证要暴露的缺口之一。
+#   - 功用（actions）与主治（indications）可反查：给症状推方剂。
+#   - 组成与剂量属危险区：记错会开错方，设为 immutable。
+id = "formula"
+name = "方剂学"
+version = 1
+description = "类方做基座，组成/功用/主治互为线索；剂量与配伍属危险区，原样记不可改。"
+
+[[entities]]
+kind = "formula"
+label = "方剂"
+primary = "name"
+group_kind = "category"
+
+[[entities.fields]]
+key = "name"
+label = "方名"
+kind = "text"
+indexable = true
+required = true
+
+[[entities.fields]]
+key = "category"
+label = "类方"
+kind = "text"
+indexable = true
+
+[[entities.relations]]
+id = "composition"
+label = "组成"
+target_kind = "herb"
+has_role = true
+has_amount = true
+indexable = true
+
+[[entities.fields]]
+key = "composition"
+label = "组成"
+kind = "tags"
+indexable = true
+reversible = true
+immutable = true
+
+[[entities.fields]]
+key = "dosage"
+label = "剂量"
+kind = "text"
+immutable = true
+
+[[entities.fields]]
+key = "actions"
+label = "功用"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "indications"
+label = "主治"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "syndrome"
+label = "证候"
+kind = "text"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "features"
+label = "辨证要点"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "contraindications"
+label = "禁忌"
+kind = "tags"
+indexable = true
+reversible = true
+immutable = true
+
+[[entities.fields]]
+key = "differential"
+label = "类方鉴别"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "decoction"
+label = "煎服法"
+kind = "text"
+
+[[entities.fields]]
+key = "source"
+label = "出处"
+kind = "text"
+immutable = true
+
+[[entities.fields]]
+key = "canonical"
+label = "教材主表述"
+kind = "text"
+
+[[entities.fields]]
+key = "notes"
+label = "笔记"
+kind = "text"
+
+[[entities.fields]]
+key = "mastery"
+label = "掌握度"
+kind = "text"
+
+[[entities.fields]]
+key = "synonyms"
+label = "可替换说法"
+kind = "tags"
+
+[[entities.fields]]
+key = "boundary"
+label = "不可替换的边界"
+kind = "text"
+
+[[entities.directions]]
+id = "composition-to-name"
+label = "给组成推方名"
+clue_fields = ["composition"]
+answer_fields = ["name"]
+
+[[entities.directions]]
+id = "indication-to-formula"
+label = "给主治推方剂"
+clue_fields = ["indications", "syndrome"]
+answer_fields = ["name", "actions"]
+
+[[entities.directions]]
+id = "name-to-composition"
+label = "给方名默写组成"
+clue_fields = ["name"]
+answer_fields = ["composition", "dosage"]
+enumerate_if_ambiguous = true
+
+[[views]]
+id = "by-category"
+label = "按类方"
+columns = ["name", "composition", "actions", "indications", "differential"]
+group_by = "category"

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "pharmacology",
+  "version": "0.5.0",
+  "files": [
+    {
+      "path": "data/sample-drugs.csv",
+      "bytes": 1764,
+      "sha256": "75bd9e247d3a387aafb56490ccb8f516b6a2fdb0b12d5023e707cd659773dff6"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 2836,
+      "sha256": "6cb54d235353adab99fb7fe0d56fed1563871e418ed9a14886783802a2e6acbd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 554,
+      "sha256": "f1560477e9947f95e576653b35ac15b3f0f4ab2a4252d47dafc38ecd75331bc4"
+    }
+  ]
+}

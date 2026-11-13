@@ -1,0 +1,128 @@
+# 伤寒论：条文 → 方证。核心是「方证对应」——给症状推方，给方推条文。
+# 复用 P2-5 relations（条文→方剂）与 P2-2 挖空（背原文）。
+id = "shanghan"
+name = "伤寒论"
+version = 1
+description = "以条文为基座，方证对应为核心：条文→方剂、症状→方剂、方剂→条文互为线索。"
+
+[[entities]]
+kind = "article"
+label = "条文"
+primary = "text"
+group_kind = "chapter"
+
+[[entities.fields]]
+key = "no"
+label = "条文号"
+kind = "text"
+indexable = true
+immutable = true
+
+[[entities.fields]]
+key = "text"
+label = "原文"
+kind = "text"
+indexable = true
+reversible = true
+immutable = true
+
+[[entities.fields]]
+key = "chapter"
+label = "篇次"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "formula"
+label = "对应方剂"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "syndrome"
+label = "汤证"
+kind = "text"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "key_signs"
+label = "辨证眼目"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "pathogenesis"
+label = "病机"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "differential"
+label = "类证鉴别"
+kind = "text"
+immutable = true
+
+[[entities.fields]]
+key = "canonical"
+label = "教材主表述"
+kind = "text"
+
+[[entities.fields]]
+key = "notes"
+label = "笔记"
+kind = "text"
+
+[[entities.fields]]
+key = "mastery"
+label = "掌握度"
+kind = "text"
+
+[[entities.fields]]
+key = "synonyms"
+label = "可替换说法"
+kind = "tags"
+
+[[entities.fields]]
+key = "boundary"
+label = "不可替换的边界"
+kind = "text"
+
+# 条文 → 方剂（关系）
+[[entities.relations]]
+id = "prescribes"
+label = "主方"
+target_kind = "formula"
+has_role = false
+has_amount = false
+indexable = true
+
+[[entities.directions]]
+id = "text_to_formula"
+label = "条文推方证"
+clue_fields = ["text"]
+answer_fields = ["formula", "syndrome"]
+
+[[entities.directions]]
+id = "signs_to_formula"
+label = "眼目推方"
+clue_fields = ["key_signs", "syndrome"]
+answer_fields = ["formula", "text"]
+enumerate_if_ambiguous = true
+
+[[entities.directions]]
+id = "formula_to_text"
+label = "背条文"
+clue_fields = ["formula"]
+answer_fields = ["text"]
+cloze = true
+cloze_ratio = 0.25
+cloze_min_len = 12
+
+[[views]]
+id = "by-chapter"
+label = "按篇次"
+columns = ["no", "text", "formula", "syndrome", "key_signs"]
+group_by = "chapter"

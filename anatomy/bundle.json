@@ -1,0 +1,139 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "anatomy",
+  "published_at": 1794562817925,
+  "entities": [
+    {
+      "id": "心脏",
+      "kind": "structure",
+      "group_id": "循环系统",
+      "fields": {
+        "canonical": "心脏为中空肌性器官",
+        "name": "心脏"
+      },
+      "image_marks": [
+        {
+          "field": "atlas",
+          "label": "左心室",
+          "shape": "rect",
+          "x": 0.62,
+          "y": 0.55,
+          "w": 0.12,
+          "h": 0.22
+        },
+        {
+          "field": "atlas",
+          "label": "右心室",
+          "shape": "rect",
+          "x": 0.38,
+          "y": 0.55,
+          "w": 0.12,
+          "h": 0.22
+        },
+        {
+          "field": "atlas",
+          "label": "左心房",
+          "shape": "rect",
+          "x": 0.6,
+          "y": 0.3,
+          "w": 0.12,
+          "h": 0.12
+        },
+        {
+          "field": "atlas",
+          "label": "右心房",
+          "shape": "rect",
+          "x": 0.4,
+          "y": 0.3,
+          "w": 0.12,
+          "h": 0.12
+        },
+        {
+          "field": "atlas",
+          "label": "主动脉",
+          "shape": "rect",
+          "x": 0.58,
+          "y": 0.18,
+          "w": 0.08,
+          "h": 0.08
+        }
+      ],
+      "spatial": [
+        {
+          "target": "肺",
+          "direction": "内"
+        },
+        {
+          "target": "纵隔",
+          "direction": "内"
+        },
+        {
+          "target": "膈",
+          "direction": "上"
+        },
+        {
+          "target": "胸骨",
+          "direction": "后"
+        }
+      ],
+      "rev": 1,
+      "updated_at": 1794562817885,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "肺",
+      "kind": "structure",
+      "group_id": "呼吸系统",
+      "fields": {
+        "canonical": "肺分左右两肺右肺三叶左肺两叶",
+        "name": "肺"
+      },
+      "image_marks": [
+        {
+          "field": "atlas",
+          "label": "左肺两叶",
+          "shape": "rect",
+          "x": 0.25,
+          "y": 0.35,
+          "w": 0.18,
+          "h": 0.3
+        },
+        {
+          "field": "atlas",
+          "label": "右肺三叶",
+          "shape": "rect",
+          "x": 0.75,
+          "y": 0.35,
+          "w": 0.18,
+          "h": 0.3
+        }
+      ],
+      "spatial": [
+        {
+          "target": "纵隔",
+          "direction": "外"
+        },
+        {
+          "target": "心脏",
+          "direction": "外"
+        },
+        {
+          "target": "膈",
+          "direction": "上"
+        },
+        {
+          "target": "肋骨",
+          "direction": "内"
+        }
+      ],
+      "rev": 2,
+      "updated_at": 1794562817885,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "d949a4c62170ad9b05150e173eb1589a0ccfe32c1a06bc86b43178a5139f7fff"
+}

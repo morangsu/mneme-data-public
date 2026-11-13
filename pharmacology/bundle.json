@@ -1,0 +1,93 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "pharmacology",
+  "published_at": 1794562820729,
+  "entities": [
+    {
+      "id": "对乙酰氨基酚",
+      "kind": "drug",
+      "group_id": "解热镇痛抗炎药",
+      "fields": {
+        "canonical": "对乙酰氨基酚中枢解热",
+        "contraindications": [
+          "严重肝肾功能不全"
+        ],
+        "differential": "与阿司匹林鉴别在无抗炎与肝毒性",
+        "dosage": "解热镇痛0.3-0.6g/次",
+        "features": [
+          "几乎无抗炎作用",
+          "无抗血小板作用"
+        ],
+        "indications": [
+          "解热",
+          "镇痛"
+        ],
+        "name": "对乙酰氨基酚"
+      },
+      "rev": 1,
+      "updated_at": 1794562820679,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "阿司匹林",
+      "kind": "drug",
+      "group_id": "解热镇痛抗炎药",
+      "fields": {
+        "canonical": "阿司匹林抑制COX不可逆",
+        "contraindications": [
+          "活动性消化性溃疡",
+          "血友病",
+          "哮喘"
+        ],
+        "differential": "与对乙酰氨基酚鉴别在抗炎与抗血小板",
+        "dosage": "解热镇痛75-300mg|抗血小板75-100mg",
+        "features": [
+          "小剂量抗血小板",
+          "不可逆抑制"
+        ],
+        "indications": [
+          "解热",
+          "镇痛",
+          "抗炎",
+          "抗血小板聚集"
+        ],
+        "name": "阿司匹林"
+      },
+      "rev": 2,
+      "updated_at": 1794562820679,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "青霉素G",
+      "kind": "drug",
+      "group_id": "β-内酰胺类",
+      "fields": {
+        "canonical": "青霉素G抑制细胞壁合成",
+        "contraindications": [
+          "青霉素过敏史"
+        ],
+        "differential": "与头孢菌素鉴别在抗菌谱与过敏交叉",
+        "dosage": "肌注80万-200万U/日",
+        "features": [
+          "窄谱",
+          "对G+菌强"
+        ],
+        "indications": [
+          "链球菌感染",
+          "梅毒",
+          "破伤风"
+        ],
+        "name": "青霉素G"
+      },
+      "rev": 3,
+      "updated_at": 1794562820679,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "486ddce19c41512d6bf683f7322bf501de9513c0f2ac56ee917a728c707b67d9"
+}

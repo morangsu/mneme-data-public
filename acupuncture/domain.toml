@@ -1,0 +1,163 @@
+# 针灸学：三合一压力测试 —— 经络层级（group）+ 腧穴归属（relations）
+# + 体表定位（spatial/location）+ 图示标注（image_marks）。
+# 这是目前 schema 能力密度最高的学科。
+id = "acupuncture"
+name = "针灸学"
+version = 1
+description = "经络→腧穴→主治，定位与归经互为线索；危险穴位（风池/哑门等）单独标注。"
+
+[[entities]]
+kind = "acupoint"
+label = "腧穴"
+primary = "name"
+group_kind = "meridian"
+spatial = true
+
+[[entities.fields]]
+key = "name"
+label = "穴名"
+kind = "text"
+indexable = true
+required = true
+
+[[entities.fields]]
+key = "meridian"
+label = "归经"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "code"
+label = "国际编号"
+kind = "text"
+indexable = true
+immutable = true
+
+[[entities.fields]]
+key = "location"
+label = "定位"
+kind = "text"
+indexable = true
+reversible = true
+immutable = true
+
+[[entities.fields]]
+key = "indications"
+label = "主治"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "needling"
+label = "刺灸法"
+kind = "text"
+immutable = true
+
+[[entities.fields]]
+key = "danger"
+label = "危险度"
+kind = "level"
+indexable = true
+levels = ["安全", "慎刺", "禁深刺", "禁针"]
+
+[[entities.fields]]
+key = "features"
+label = "特定穴"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "differential"
+label = "邻近穴鉴别"
+kind = "text"
+immutable = true
+
+[[entities.fields]]
+key = "atlas"
+label = "穴位图"
+kind = "image"
+
+[[entities.fields]]
+key = "canonical"
+label = "教材主表述"
+kind = "text"
+
+[[entities.fields]]
+key = "notes"
+label = "笔记"
+kind = "text"
+
+[[entities.fields]]
+key = "mastery"
+label = "掌握度"
+kind = "text"
+
+[[entities.fields]]
+key = "synonyms"
+label = "可替换说法"
+kind = "tags"
+
+[[entities.fields]]
+key = "boundary"
+label = "不可替换的边界"
+kind = "text"
+
+[[entities.images]]
+key = "atlas"
+label = "穴位图"
+max_side = 4096
+
+# 腧穴归属于经络（关系带顺序：经络循行次序）
+[[entities.relations]]
+id = "meridian_flow"
+label = "循行次序"
+target_kind = "meridian"
+has_role = false
+has_amount = false
+indexable = true
+
+[[entities.directions]]
+id = "location_to_name"
+label = "定位推穴名"
+clue_fields = ["location", "meridian"]
+answer_fields = ["name", "code"]
+
+[[entities.directions]]
+id = "indication_to_point"
+label = "主治推穴位"
+clue_fields = ["indications"]
+answer_fields = ["name", "meridian"]
+scope = "meridian"
+enumerate_if_ambiguous = true
+
+[[entities.directions]]
+id = "name_to_location"
+label = "背定位"
+clue_fields = ["name", "code"]
+answer_fields = ["location"]
+cloze = true
+cloze_ratio = 0.3
+cloze_min_len = 10
+
+[[entities.directions]]
+id = "atlas_locate"
+label = "图示指认"
+clue_fields = ["name"]
+answer_fields = ["name"]
+image_locate = true
+image_field = "atlas"
+
+[[entities.directions]]
+id = "spatial_rel"
+label = "体表方位"
+clue_fields = ["name"]
+answer_fields = ["name"]
+spatial_clue = true
+
+[[views]]
+id = "by-meridian"
+label = "按经络"
+columns = ["name", "code", "location", "indications", "danger"]
+group_by = "meridian"

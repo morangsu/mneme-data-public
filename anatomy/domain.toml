@@ -1,0 +1,112 @@
+# 解剖学：以「器官/结构」为基座，位置关系与图示标注是核心考点。
+# P2-7：kind = "image" 字段存相对路径；标注坐标存 image_marks（CSV 用 marks 列）。
+# P2-4：direction 声明 image_locate + image_field 即生成「在图中指出 X」题。
+id = "anatomy"
+name = "解剖学"
+version = 1
+description = "结构导向：位置、毗邻、图示指认。图像标注用相对比例坐标，换分辨率不失效。"
+
+[[entities]]
+kind = "structure"
+label = "结构"
+primary = "name"
+group_kind = "system"
+# P2-8：允许方位关系（上/下/内/外/前/后/浅/深/周围）
+spatial = true
+
+[[entities.fields]]
+key = "name"
+label = "名称"
+kind = "text"
+indexable = true
+required = true
+
+[[entities.fields]]
+key = "system"
+label = "系统"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "location"
+label = "位置"
+kind = "text"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "adjacent"
+label = "毗邻"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "function"
+label = "功能"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "atlas"
+label = "解剖图"
+kind = "image"
+
+[[entities.fields]]
+key = "canonical"
+label = "教材主表述"
+kind = "text"
+
+[[entities.fields]]
+key = "notes"
+label = "笔记"
+kind = "text"
+
+[[entities.fields]]
+key = "mastery"
+label = "掌握度"
+kind = "text"
+
+[[entities.fields]]
+key = "synonyms"
+label = "可替换说法"
+kind = "tags"
+
+[[entities.fields]]
+key = "boundary"
+label = "不可替换的边界"
+kind = "text"
+
+[[entities.images]]
+key = "atlas"
+label = "解剖图"
+max_side = 4096
+
+[[entities.directions]]
+id = "location_to_name"
+label = "位置推结构"
+clue_fields = ["location", "adjacent"]
+answer_fields = ["name", "system"]
+
+[[entities.directions]]
+id = "atlas_locate"
+label = "图示指认"
+clue_fields = ["name"]
+answer_fields = ["name"]
+image_locate = true
+image_field = "atlas"
+
+# P2-8 方位题：心脏位于肺的哪个方位？
+[[entities.directions]]
+id = "spatial_rel"
+label = "方位关系"
+clue_fields = ["name"]
+answer_fields = ["name"]
+spatial_clue = true
+
+[[views]]
+id = "by-system"
+label = "按系统"
+columns = ["name", "location", "adjacent", "function"]
+group_by = "system"

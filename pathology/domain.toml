@@ -1,0 +1,114 @@
+# 病理学：镜下表现 → 诊断。特征是「同病异变、同变异病」，
+# 大量病变共享「细胞核异型」「炎细胞浸润」，最能压测辨析题与歧义枚举。
+id = "pathology"
+name = "病理学"
+version = 1
+description = "形态导向：镜下特征推病变，特征性病变是诊断金标准。"
+
+[[entities]]
+kind = "lesion"
+label = "病变"
+primary = "name"
+group_kind = "category"
+
+[[entities.fields]]
+key = "name"
+label = "病变名"
+kind = "text"
+indexable = true
+required = true
+
+[[entities.fields]]
+key = "category"
+label = "类别"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "microscopy"
+label = "镜下特征"
+kind = "tags"
+indexable = true
+reversible = true
+immutable = true
+
+[[entities.fields]]
+key = "gross"
+label = "大体观"
+kind = "text"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "hallmark"
+label = "特征性病变"
+kind = "tags"
+indexable = true
+reversible = true
+immutable = true
+
+[[entities.fields]]
+key = "pathogenesis"
+label = "发生机制"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "clinical"
+label = "临床联系"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "differential"
+label = "鉴别诊断"
+kind = "text"
+immutable = true
+
+[[entities.fields]]
+key = "canonical"
+label = "教材主表述"
+kind = "text"
+
+[[entities.fields]]
+key = "notes"
+label = "笔记"
+kind = "text"
+
+[[entities.fields]]
+key = "mastery"
+label = "掌握度"
+kind = "text"
+
+[[entities.fields]]
+key = "synonyms"
+label = "可替换说法"
+kind = "tags"
+
+[[entities.fields]]
+key = "boundary"
+label = "不可替换的边界"
+kind = "text"
+
+[[entities.directions]]
+id = "microscopy_to_lesion"
+label = "镜下推病变"
+clue_fields = ["microscopy", "gross"]
+answer_fields = ["name", "hallmark"]
+scope = "category"
+enumerate_if_ambiguous = true
+
+[[entities.directions]]
+id = "name_to_hallmark"
+label = "背特征病变"
+clue_fields = ["name"]
+answer_fields = ["hallmark"]
+cloze = true
+cloze_ratio = 0.3
+cloze_min_len = 8
+
+[[views]]
+id = "by-category"
+label = "按类别"
+columns = ["name", "microscopy", "hallmark", "clinical"]
+group_by = "category"

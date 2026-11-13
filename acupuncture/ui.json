@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "layout": "atlas",
+  "default_view": "by-meridian",
+  "note": "针灸以图示为主：优先渲染穴位图与方位题，危险穴标红提示。",
+  "collapsed_by_default": false,
+  "quiz_emphasize": [
+    "atlas_locate.image",
+    "spatial_rel.spatial"
+  ],
+  "highlight_danger": "danger",
+  "theme": "classic"
+}

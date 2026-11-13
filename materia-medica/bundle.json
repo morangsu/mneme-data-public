@@ -1,8 +1,8 @@
 {
   "format": "mneme-public/1",
-  "rev": 3,
+  "rev": 1,
   "schema_id": "materia-medica",
-  "published_at": 1794217861239,
+  "published_at": 1794562819680,
   "entities": [
     {
       "id": "桂枝",
@@ -42,8 +42,8 @@
       "source": {
         "page": 47
       },
-      "rev": 8,
-      "updated_at": 1794217855875,
+      "rev": 1,
+      "updated_at": 1794562819633,
       "device": "public",
       "deleted": false
     },
@@ -84,8 +84,8 @@
       "source": {
         "page": 48
       },
-      "rev": 7,
-      "updated_at": 1794215948134,
+      "rev": 2,
+      "updated_at": 1794562819633,
       "device": "public",
       "deleted": false
     },
@@ -127,8 +127,8 @@
       "source": {
         "page": 62
       },
-      "rev": 2,
-      "updated_at": 1794215130969,
+      "rev": 3,
+      "updated_at": 1794562819633,
       "device": "public",
       "deleted": false
     },
@@ -170,8 +170,8 @@
       "source": {
         "page": 45
       },
-      "rev": 9,
-      "updated_at": 1794217855875,
+      "rev": 4,
+      "updated_at": 1794562819633,
       "device": "public",
       "deleted": false
     },
@@ -212,8 +212,8 @@
       "source": {
         "page": 100
       },
-      "rev": 4,
-      "updated_at": 1794215130969,
+      "rev": 5,
+      "updated_at": 1794562819633,
       "device": "public",
       "deleted": false
     },
@@ -258,8 +258,8 @@
       "source": {
         "page": 312
       },
-      "rev": 5,
-      "updated_at": 1794215130969,
+      "rev": 6,
+      "updated_at": 1794562819633,
       "device": "public",
       "deleted": false
     },
@@ -300,12 +300,12 @@
       "source": {
         "page": 98
       },
-      "rev": 6,
-      "updated_at": 1794215130969,
+      "rev": 7,
+      "updated_at": 1794562819633,
       "device": "public",
       "deleted": false
     }
   ],
   "groups": [],
-  "checksum": "2018cfc8bb642772913e50f5ce1b5fd52234af3640717882962ec5c9ced16b79"
+  "checksum": "36c59ab368fcfedd699d441a4c7411d311ee8cf0dc8ac312ec555cdec25207c1"
 }

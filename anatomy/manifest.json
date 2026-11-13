@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "anatomy",
+  "version": "0.2.0",
+  "files": [
+    {
+      "path": "data/sample-structures.csv",
+      "bytes": 914,
+      "sha256": "44a70a2b343c275d7dfbaa0ce9bb8be110112ee8dec582ad7582f539835e4d25"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 2266,
+      "sha256": "39fdc966317eeb1deb94f9694fdbe3fd831f7e21a117514991c7ff6ec71a998a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1759,
+      "sha256": "33e4c5867594b4557a4411ee768b3c43b315d9aa36a7c165c5ba64b70a08024e"
+    }
+  ]
+}

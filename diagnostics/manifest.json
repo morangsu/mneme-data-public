@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "diagnostics",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "data/sample-patterns.csv",
+      "bytes": 1426,
+      "sha256": "ddf2616c5af9a4c4d0df7b18eb7a5b565cb0e70cbb888d8cb3fca6a31afe952a"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 2055,
+      "sha256": "034dfb472e6744d5705978996c99f88a58c961a9a25db0fa6edcba71924c3733"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1105,
+      "sha256": "e35b31e6342ec888455f98e24f3a4cb51557e838e9bf260aefda1358413f68b6"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "physiology",
+  "published_at": 1794562821062,
+  "entities": [
+    {
+      "id": "三羧酸循环",
+      "kind": "process",
+      "group_id": "糖代谢",
+      "fields": {
+        "canonical": "三羧酸循环在线粒体基质进行",
+        "name": "三羧酸循环"
+      },
+      "relations": [
+        {
+          "target": "乙酰CoA",
+          "target_kind": "step",
+          "order": 1
+        },
+        {
+          "target": "柠檬酸",
+          "target_kind": "step",
+          "order": 2
+        },
+        {
+          "target": "异柠檬酸",
+          "target_kind": "step",
+          "order": 3
+        },
+        {
+          "target": "α-酮戊二酸",
+          "target_kind": "step",
+          "order": 4
+        },
+        {
+          "target": "琥珀酰CoA",
+          "target_kind": "step",
+          "order": 5
+        },
+        {
+          "target": "琥珀酸",
+          "target_kind": "step",
+          "order": 6
+        },
+        {
+          "target": "苹果酸",
+          "target_kind": "step",
+          "order": 7
+        },
+        {
+          "target": "草酰乙酸",
+          "target_kind": "step",
+          "order": 8
+        }
+      ],
+      "rev": 1,
+      "updated_at": 1794562821017,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "糖酵解",
+      "kind": "process",
+      "group_id": "糖代谢",
+      "fields": {
+        "canonical": "糖酵解在胞质中进行净生成2ATP",
+        "name": "糖酵解"
+      },
+      "relations": [
+        {
+          "target": "葡萄糖",
+          "target_kind": "step",
+          "order": 1
+        },
+        {
+          "target": "葡萄糖-6-磷酸",
+          "target_kind": "step",
+          "order": 2
+        },
+        {
+          "target": "果糖-6-磷酸",
+          "target_kind": "step",
+          "order": 3
+        },
+        {
+          "target": "果糖-1;6-二磷酸",
+          "target_kind": "step",
+          "order": 4
+        },
+        {
+          "target": "磷酸丙糖",
+          "target_kind": "step",
+          "order": 5
+        },
+        {
+          "target": "丙酮酸",
+          "target_kind": "step",
+          "order": 6
+        }
+      ],
+      "rev": 2,
+      "updated_at": 1794562821017,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "36d80f607b6aa5a614316c413ba59a6daeb2b80b4a68a71830ab7808e279786d"
+}

@@ -1,0 +1,138 @@
+# 中医内科学：病 → 证 → 治法 → 方 四级链。
+# 用 relations 表达「病-证」「证-方」两层关系，是最复杂的学科结构压测。
+id = "internal-med"
+name = "中医内科学"
+version = 1
+description = "以病为纲、以证为目：病→证→治法→方四级链，方随证转是核心。"
+
+[[entities]]
+kind = "disease"
+label = "病证"
+primary = "name"
+group_kind = "system"
+
+[[entities.fields]]
+key = "name"
+label = "病名"
+kind = "text"
+indexable = true
+required = true
+
+[[entities.fields]]
+key = "system"
+label = "脏腑系"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "main_signs"
+label = "主症"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "pattern"
+label = "证型"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "treatment"
+label = "治法"
+kind = "text"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "formula"
+label = "代表方"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "key_signs"
+label = "辨证眼目"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "differential"
+label = "类证鉴别"
+kind = "text"
+immutable = true
+
+[[entities.fields]]
+key = "canonical"
+label = "教材主表述"
+kind = "text"
+
+[[entities.fields]]
+key = "notes"
+label = "笔记"
+kind = "text"
+
+[[entities.fields]]
+key = "mastery"
+label = "掌握度"
+kind = "text"
+
+[[entities.fields]]
+key = "synonyms"
+label = "可替换说法"
+kind = "tags"
+
+[[entities.fields]]
+key = "boundary"
+label = "不可替换的边界"
+kind = "text"
+
+# 病 → 证型（层级 1）
+[[entities.relations]]
+id = "patterns"
+label = "下属证型"
+target_kind = "pattern"
+has_role = false
+has_amount = false
+indexable = true
+
+# 证型 → 方剂（层级 2，带方随证转的顺序）
+[[entities.relations]]
+id = "prescriptions"
+label = "方随证转"
+target_kind = "formula"
+has_role = true
+has_amount = false
+indexable = true
+
+[[entities.directions]]
+id = "signs_to_disease"
+label = "主症推病"
+clue_fields = ["main_signs", "key_signs"]
+answer_fields = ["name", "pattern"]
+
+[[entities.directions]]
+id = "pattern_to_formula"
+label = "证型推方"
+clue_fields = ["pattern"]
+answer_fields = ["treatment", "formula"]
+scope = "system"
+enumerate_if_ambiguous = true
+
+[[entities.directions]]
+id = "name_to_chain"
+label = "背证治方链"
+clue_fields = ["name"]
+answer_fields = ["pattern"]
+cloze = true
+cloze_ratio = 0.3
+cloze_min_len = 8
+
+[[views]]
+id = "by-system"
+label = "按脏腑系"
+columns = ["name", "pattern", "treatment", "formula", "main_signs"]
+group_by = "system"

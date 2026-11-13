@@ -1,0 +1,211 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "acupuncture",
+  "published_at": 1794562817530,
+  "entities": [
+    {
+      "id": "中府",
+      "kind": "acupoint",
+      "group_id": "手太阴肺经",
+      "fields": {
+        "canonical": "中府为肺之募穴",
+        "differential": "与云门鉴别在肋间隙",
+        "features": [
+          "肺之募穴"
+        ],
+        "indications": [
+          "咳嗽",
+          "气喘",
+          "胸痛"
+        ],
+        "name": "中府"
+      },
+      "relations": [
+        {
+          "target": "手太阴肺经",
+          "target_kind": "meridian",
+          "order": 1
+        }
+      ],
+      "image_marks": [
+        {
+          "field": "atlas",
+          "label": "中府",
+          "shape": "rect",
+          "x": 0.3,
+          "y": 0.28,
+          "w": 0.06,
+          "h": 0.06
+        }
+      ],
+      "spatial": [
+        {
+          "target": "锁骨",
+          "direction": "下"
+        },
+        {
+          "target": "胸壁",
+          "direction": "外"
+        }
+      ],
+      "rev": 1,
+      "updated_at": 1794562817483,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "尺泽",
+      "kind": "acupoint",
+      "group_id": "手太阴肺经",
+      "fields": {
+        "canonical": "尺泽为肺经合穴",
+        "differential": "与曲泽鉴别在肌腱内外侧",
+        "features": [
+          "合穴"
+        ],
+        "indications": [
+          "咳嗽",
+          "气喘",
+          "咽喉肿痛",
+          "肘臂挛痛"
+        ],
+        "name": "尺泽"
+      },
+      "relations": [
+        {
+          "target": "手太阴肺经",
+          "target_kind": "meridian",
+          "order": 5
+        }
+      ],
+      "image_marks": [
+        {
+          "field": "atlas",
+          "label": "尺泽",
+          "shape": "rect",
+          "x": 0.34,
+          "y": 0.42,
+          "w": 0.05,
+          "h": 0.05
+        }
+      ],
+      "spatial": [
+        {
+          "target": "肘横纹",
+          "direction": "上"
+        },
+        {
+          "target": "肱二头肌腱",
+          "direction": "外"
+        }
+      ],
+      "rev": 2,
+      "updated_at": 1794562817483,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "阳陵泉",
+      "kind": "acupoint",
+      "group_id": "足少阳胆经",
+      "fields": {
+        "canonical": "阳陵泉为筋会",
+        "differential": "与阴陵泉鉴别在腓骨内外",
+        "features": [
+          "合穴",
+          "筋会"
+        ],
+        "indications": [
+          "胁痛",
+          "口苦",
+          "下肢痿痹",
+          "膝肿痛"
+        ],
+        "name": "阳陵泉"
+      },
+      "relations": [
+        {
+          "target": "足少阳胆经",
+          "target_kind": "meridian",
+          "order": 34
+        }
+      ],
+      "image_marks": [
+        {
+          "field": "atlas",
+          "label": "阳陵泉",
+          "shape": "rect",
+          "x": 0.42,
+          "y": 0.62,
+          "w": 0.05,
+          "h": 0.05
+        }
+      ],
+      "spatial": [
+        {
+          "target": "胫骨",
+          "direction": "外"
+        }
+      ],
+      "rev": 3,
+      "updated_at": 1794562817483,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "风池",
+      "kind": "acupoint",
+      "group_id": "足少阳胆经",
+      "fields": {
+        "canonical": "风池为祛风要穴",
+        "differential": "与风府鉴别在颅底两侧",
+        "features": [
+          "与风府相平"
+        ],
+        "indications": [
+          "头痛",
+          "眩晕",
+          "目赤肿痛",
+          "感冒",
+          "颈项强痛"
+        ],
+        "name": "风池"
+      },
+      "relations": [
+        {
+          "target": "足少阳胆经",
+          "target_kind": "meridian",
+          "order": 20
+        }
+      ],
+      "image_marks": [
+        {
+          "field": "atlas",
+          "label": "风池",
+          "shape": "rect",
+          "x": 0.72,
+          "y": 0.22,
+          "w": 0.06,
+          "h": 0.06
+        }
+      ],
+      "spatial": [
+        {
+          "target": "枕骨",
+          "direction": "下"
+        },
+        {
+          "target": "胸锁乳突肌",
+          "direction": "内"
+        }
+      ],
+      "rev": 4,
+      "updated_at": 1794562817483,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "72ea2855aa2c03163790ccf3b6c71d12a40129e6a5e7f9e2b08d969eab2014f6"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "layout": "tree",
+  "default_view": "by-category",
+  "note": "内经以篇章为基座，矩阵默认按「类别」折叠成树；答题时隐藏原文。",
+  "collapsed_by_default": true,
+  "quiz_hide_fields": [
+    "text"
+  ],
+  "theme": "classic"
+}

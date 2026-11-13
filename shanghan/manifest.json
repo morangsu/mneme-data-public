@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "shanghan",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "data/sample-articles.csv",
+      "bytes": 1315,
+      "sha256": "fbff3fd8914db0f076203a943ed9e302b9135668a17ac49f0c72b31ce92f2a5c"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 2419,
+      "sha256": "aecd46d4d7f2f9a5c74d7b3e1ae3ddb8b6df69b17e165efed4f6943b6595ef1f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1111,
+      "sha256": "eba08fa116eff8b4e412a80f65c98b56d0894971a1708d456a27847bfd65b717"
+    }
+  ]
+}

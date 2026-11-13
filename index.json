@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "subjects": [
+    {
+      "id": "materia-medica",
+      "name": "中药学",
+      "dir": "materia-medica",
+      "domain": "materia-medica/domain.toml",
+      "bundle": "materia-medica/bundle.json",
+      "manifest": "materia-medica/manifest.json",
+      "data": "materia-medica/data"
+    },
+    {
+      "id": "neijing",
+      "name": "内经",
+      "dir": "neijing",
+      "domain": "neijing/domain.toml",
+      "bundle": "neijing/bundle.json",
+      "manifest": "neijing/manifest.json",
+      "data": null
+    },
+    {
+      "id": "botany",
+      "name": "植物学",
+      "dir": "botany",
+      "domain": "botany/domain.toml",
+      "bundle": "botany/bundle.json",
+      "manifest": "botany/manifest.json",
+      "data": null
+    },
+    {
+      "id": "dietetics",
+      "name": "食疗学",
+      "dir": "dietetics",
+      "domain": "dietetics/domain.toml",
+      "bundle": "dietetics/bundle.json",
+      "manifest": "dietetics/manifest.json",
+      "data": null
+    },
+    {
+      "id": "formula",
+      "name": "方剂学",
+      "dir": "formula",
+      "domain": "formula/domain.toml",
+      "bundle": "formula/bundle.json",
+      "manifest": "formula/manifest.json",
+      "data": "formula/data"
+    },
+    {
+      "id": "pharmacology",
+      "name": "药理学",
+      "dir": "pharmacology",
+      "domain": "pharmacology/domain.toml",
+      "bundle": "pharmacology/bundle.json",
+      "manifest": "pharmacology/manifest.json",
+      "data": "pharmacology/data"
+    },
+    {
+      "id": "physiology",
+      "name": "生理学",
+      "dir": "physiology",
+      "domain": "physiology/domain.toml",
+      "bundle": "physiology/bundle.json",
+      "manifest": "physiology/manifest.json",
+      "data": "physiology/data"
+    },
+    {
+      "id": "anatomy",
+      "name": "解剖学",
+      "dir": "anatomy",
+      "domain": "anatomy/domain.toml",
+      "bundle": "anatomy/bundle.json",
+      "manifest": "anatomy/manifest.json",
+      "data": "anatomy/data"
+    },
+    {
+      "id": "acupuncture",
+      "name": "针灸学",
+      "dir": "acupuncture",
+      "domain": "acupuncture/domain.toml",
+      "bundle": "acupuncture/bundle.json",
+      "manifest": "acupuncture/manifest.json",
+      "data": "acupuncture/data"
+    },
+    {
+      "id": "shanghan",
+      "name": "伤寒论",
+      "dir": "shanghan",
+      "domain": "shanghan/domain.toml",
+      "bundle": "shanghan/bundle.json",
+      "manifest": "shanghan/manifest.json",
+      "data": "shanghan/data"
+    },
+    {
+      "id": "diagnostics",
+      "name": "中医诊断学",
+      "dir": "diagnostics",
+      "domain": "diagnostics/domain.toml",
+      "bundle": "diagnostics/bundle.json",
+      "manifest": "diagnostics/manifest.json",
+      "data": "diagnostics/data"
+    },
+    {
+      "id": "internal-med",
+      "name": "中医内科学",
+      "dir": "internal-med",
+      "domain": "internal-med/domain.toml",
+      "bundle": "internal-med/bundle.json",
+      "manifest": "internal-med/manifest.json",
+      "data": "internal-med/data"
+    },
+    {
+      "id": "pathology",
+      "name": "病理学",
+      "dir": "pathology",
+      "domain": "pathology/domain.toml",
+      "bundle": "pathology/bundle.json",
+      "manifest": "pathology/manifest.json",
+      "data": "pathology/data"
+    }
+  ]
+}

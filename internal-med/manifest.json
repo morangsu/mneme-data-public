@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "internal-med",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "data/sample-diseases.csv",
+      "bytes": 1589,
+      "sha256": "48f519faa54e1fffb844c806b75a582ca5343a8bb41cc38698343db1b128a86e"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 2630,
+      "sha256": "2b7d08eee1f3505e83618792f20f7265f43252f413246c914816f11cc415ac47"
+    },
+    {
+      "path": "README.md",
+      "bytes": 826,
+      "sha256": "20ec9c4b6f849b39443289fe897c83eb4e673f93e2bacb50aba80b28673bdccd"
+    }
+  ]
+}

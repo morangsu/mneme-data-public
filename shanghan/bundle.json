@@ -1,0 +1,70 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "shanghan",
+  "published_at": 1794562821390,
+  "entities": [
+    {
+      "id": "太阳中风条文2",
+      "kind": "article",
+      "group_id": "辨太阳病脉证并治",
+      "fields": {
+        "canonical": "太阳中风以汗出脉缓为眼目",
+        "differential": "与伤寒鉴别在有汗无汗"
+      },
+      "relations": [
+        {
+          "target": "桂枝汤",
+          "target_kind": "formula",
+          "order": 2
+        }
+      ],
+      "rev": 1,
+      "updated_at": 1794562821344,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "太阳伤寒条文3",
+      "kind": "article",
+      "group_id": "辨太阳病脉证并治",
+      "fields": {
+        "canonical": "太阳伤寒以无汗体痛脉紧为眼目",
+        "differential": "与中风鉴别在有汗无汗"
+      },
+      "relations": [
+        {
+          "target": "麻黄汤",
+          "target_kind": "formula",
+          "order": 3
+        }
+      ],
+      "rev": 2,
+      "updated_at": 1794562821344,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "太阳病条文1",
+      "kind": "article",
+      "group_id": "辨太阳病脉证并治",
+      "fields": {
+        "canonical": "太阳病以脉浮头项强痛而恶寒为提纲",
+        "differential": "与阳明病鉴别在有无口渴"
+      },
+      "relations": [
+        {
+          "target": "桂枝汤",
+          "target_kind": "formula",
+          "order": 1
+        }
+      ],
+      "rev": 3,
+      "updated_at": 1794562821344,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "b6ce46e2188e55f0e9c4ce055d6deb0ef7fe14669f1f2f68a9fb715a26660b59"
+}

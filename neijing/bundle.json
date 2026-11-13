@@ -1,0 +1,34 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "neijing",
+  "published_at": 1794562820036,
+  "entities": [
+    {
+      "id": "上古天真论",
+      "kind": "chapter",
+      "group_id": "养生",
+      "fields": {
+        "canonical": "上古之人其知道者法于阴阳"
+      },
+      "rev": 1,
+      "updated_at": 1794562819994,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "四气调神大论",
+      "kind": "chapter",
+      "group_id": "养生",
+      "fields": {
+        "canonical": "春三月此谓发陈"
+      },
+      "rev": 2,
+      "updated_at": 1794562819994,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "4e5c9dc9754b64c2c6298352fa042bf26992431a74b5043fdf4cf92e4d270b4f"
+}

@@ -1,0 +1,80 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "pathology",
+  "published_at": 1794562820387,
+  "entities": [
+    {
+      "id": "干酪样坏死",
+      "kind": "lesion",
+      "group_id": "坏死",
+      "fields": {
+        "canonical": "干酪样坏死为结核特征",
+        "differential": "与凝固性坏死鉴别在有无组织轮廓",
+        "name": "干酪样坏死"
+      },
+      "rev": 1,
+      "updated_at": 1794562820340,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "液化性坏死",
+      "kind": "lesion",
+      "group_id": "坏死",
+      "fields": {
+        "canonical": "脑梗死属液化性坏死",
+        "differential": "与凝固性坏死鉴别在组织是否液化",
+        "name": "液化性坏死"
+      },
+      "rev": 2,
+      "updated_at": 1794562820340,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "细胞水肿",
+      "kind": "lesion",
+      "group_id": "细胞损伤",
+      "fields": {
+        "canonical": "细胞水肿是最早的可逆性损伤",
+        "differential": "与脂肪变性鉴别在有无空泡",
+        "name": "细胞水肿"
+      },
+      "rev": 3,
+      "updated_at": 1794562820340,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "肉芽组织",
+      "kind": "lesion",
+      "group_id": "修复",
+      "fields": {
+        "canonical": "肉芽组织三要素缺一不可",
+        "differential": "与肉芽肿鉴别在有无上皮样细胞",
+        "name": "肉芽组织"
+      },
+      "rev": 4,
+      "updated_at": 1794562820340,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "脂肪变性",
+      "kind": "lesion",
+      "group_id": "细胞损伤",
+      "fields": {
+        "canonical": "脂肪变性以脂滴空泡为特征",
+        "differential": "与细胞水肿鉴别在空泡是否界清",
+        "name": "脂肪变性"
+      },
+      "rev": 5,
+      "updated_at": 1794562820340,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "6db93fc40cd1bfd6a7f1d8a49685b922394dc852e03886578347e120538e7e41"
+}

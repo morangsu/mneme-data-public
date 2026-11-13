@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "name": "botany",
+  "version": "0.4.0",
+  "files": [
+    {
+      "path": "domain.toml",
+      "bytes": 2599,
+      "sha256": "57743d1ce42b70cf18a3db0d43d24df7eaedb23f9b11d54b19e7ec1d64cefd3d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 957,
+      "sha256": "3855b987c19bdc1f343b11bb2705b4507d87c64722a6a57d3a88fba4ef577c27"
+    }
+  ]
+}

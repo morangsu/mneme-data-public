@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "formula",
+  "version": "0.5.0",
+  "files": [
+    {
+      "path": "data/sample-formulas.csv",
+      "bytes": 1659,
+      "sha256": "0eeac34a7fc22251d2a2b76f02e7e37d320615d1c8bb0f9cd36f1b9195c15e04"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 3142,
+      "sha256": "75ed6a2139a340c06b00ed90973a6374b13388ab371330280211f4920dc966e4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 558,
+      "sha256": "1580f2639fd755a8b47b46495d3b726e2ef465ea152122e15b44b426d41a09ee"
+    }
+  ]
+}

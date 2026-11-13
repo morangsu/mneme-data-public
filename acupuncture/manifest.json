@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "name": "acupuncture",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "data/sample-acupoints.csv",
+      "bytes": 1860,
+      "sha256": "124a08bbb7f2a0a7e3e0c5290a0fc26dfcdb1eab3bbc206dfd1a12640338eba6"
+    },
+    {
+      "path": "domain.toml",
+      "bytes": 3133,
+      "sha256": "850dfb1ca9af956a3d5c7dcaf33d0ff24676ec3fb4b2ff92cd15bec87a443996"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1533,
+      "sha256": "4eb8776484e630fc7b37913a459d7d96ae23dcfa3b05ed420b0df93b67130512"
+    }
+  ]
+}

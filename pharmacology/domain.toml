@@ -1,0 +1,139 @@
+# 药理学：属性密集（机制/适应证/不良反应/相互作用），与方剂学形成对照。
+# 设计要点：
+#   - 不良反应（adverse）需要**分级**（I–IV 级 / 常见-罕见），现有 tags 表达不了分级
+#     —— 本次验证要确认这个缺口。
+#   - 作用机制（mechanism）是因果链，现用 text 承载，可读但不可结构化反查。
+id = "pharmacology"
+name = "药理学"
+version = 1
+description = "机制/适应证/不良反应互为线索；剂量与禁忌属危险区，原样记。"
+
+[[entities]]
+kind = "drug"
+label = "药物"
+primary = "name"
+group_kind = "drug_class"
+
+[[entities.fields]]
+key = "name"
+label = "药名"
+kind = "text"
+indexable = true
+required = true
+
+[[entities.fields]]
+key = "drug_class"
+label = "药物类别"
+kind = "text"
+indexable = true
+
+[[entities.fields]]
+key = "mechanism"
+label = "作用机制"
+kind = "text"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "indications"
+label = "适应证"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "adverse"
+label = "不良反应"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "adverse_level"
+label = "不良反应严重度"
+kind = "level"
+indexable = true
+levels = ["轻微", "中等", "严重", "危及生命"]
+
+[[entities.fields]]
+key = "contraindications"
+label = "禁忌证"
+kind = "tags"
+indexable = true
+reversible = true
+immutable = true
+
+[[entities.fields]]
+key = "interactions"
+label = "相互作用"
+kind = "tags"
+indexable = true
+immutable = true
+
+[[entities.fields]]
+key = "dosage"
+label = "剂量"
+kind = "text"
+immutable = true
+
+[[entities.fields]]
+key = "features"
+label = "特点"
+kind = "tags"
+indexable = true
+reversible = true
+
+[[entities.fields]]
+key = "differential"
+label = "同类药鉴别"
+kind = "text"
+
+[[entities.fields]]
+key = "canonical"
+label = "教材主表述"
+kind = "text"
+
+[[entities.fields]]
+key = "notes"
+label = "笔记"
+kind = "text"
+
+[[entities.fields]]
+key = "mastery"
+label = "掌握度"
+kind = "text"
+
+[[entities.fields]]
+key = "synonyms"
+label = "可替换说法"
+kind = "tags"
+
+[[entities.fields]]
+key = "boundary"
+label = "不可替换的边界"
+kind = "text"
+
+[[entities.directions]]
+id = "mechanism-to-drug"
+label = "给机制推药物"
+clue_fields = ["mechanism"]
+answer_fields = ["name", "drug_class"]
+
+[[entities.directions]]
+id = "indication-to-drug"
+label = "给适应证推药物"
+clue_fields = ["indications"]
+answer_fields = ["name", "mechanism"]
+
+[[entities.directions]]
+id = "adverse-to-drug"
+label = "给不良反应推药物"
+clue_fields = ["adverse"]
+answer_fields = ["name", "drug_class"]
+enumerate_if_ambiguous = true
+
+[[views]]
+id = "by-class"
+label = "按药物类别"
+columns = ["name", "mechanism", "indications", "adverse", "differential"]
+group_by = "drug_class"

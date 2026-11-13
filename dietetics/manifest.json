@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "name": "dietetics",
+  "version": "0.4.0",
+  "files": [
+    {
+      "path": "domain.toml",
+      "bytes": 2691,
+      "sha256": "11f709fdb6aa38a67047c32ffb6d10235e8b749b60a376469a057cf5808daae3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 969,
+      "sha256": "80f6dc8ff93471c07fc2a59f1b002739972ee34f216dc6fa3f3a3d90f39368f2"
+    }
+  ]
+}

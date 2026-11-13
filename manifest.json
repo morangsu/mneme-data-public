@@ -1,44 +1,99 @@
 {
-  "schema": 1,
+  "schema": 2,
   "name": "mneme-data-public",
-  "version": "0.3.2",
-  "generated_at": "2026-11-09T13:19:32.210Z",
-  "files": [
+  "version": "0.4.0",
+  "layout": "per-subject directories; each subject is self-contained",
+  "subjects": [
     {
-      "path": "botany.toml",
-      "bytes": 2599,
-      "sha256": "57743d1ce42b70cf18a3db0d43d24df7eaedb23f9b11d54b19e7ec1d64cefd3d"
+      "id": "materia-medica",
+      "dir": "materia-medica",
+      "domain": "materia-medica/domain.toml",
+      "bundle": "materia-medica/bundle.json",
+      "manifest": "materia-medica/manifest.json"
     },
     {
-      "path": "dietetics.toml",
-      "bytes": 2691,
-      "sha256": "11f709fdb6aa38a67047c32ffb6d10235e8b749b60a376469a057cf5808daae3"
+      "id": "neijing",
+      "dir": "neijing",
+      "domain": "neijing/domain.toml",
+      "bundle": "neijing/bundle.json",
+      "manifest": "neijing/manifest.json"
     },
     {
-      "path": "materia-medica.toml",
-      "bytes": 5227,
-      "sha256": "5d14767bc7ea3e089c0113bbc9d6c48ded7be9c481c03aae3d94ee62311acadb"
+      "id": "botany",
+      "dir": "botany",
+      "domain": "botany/domain.toml",
+      "bundle": "botany/bundle.json",
+      "manifest": "botany/manifest.json"
     },
     {
-      "path": "neijing.toml",
-      "bytes": 2417,
-      "sha256": "dad393fd52a58c33e84fe86f5abbf57a8a858eecd14cad9b1518dc235a0fbdfc"
+      "id": "dietetics",
+      "dir": "dietetics",
+      "domain": "dietetics/domain.toml",
+      "bundle": "dietetics/bundle.json",
+      "manifest": "dietetics/manifest.json"
     },
     {
-      "path": "sample-herbs.csv",
-      "bytes": 3231,
-      "sha256": "37a7f558fea9b65d52f78c72466257233b4b7a4a325a8854f0d9f43f4f29f455"
+      "id": "formula",
+      "dir": "formula",
+      "domain": "formula/domain.toml",
+      "bundle": "formula/bundle.json",
+      "manifest": "formula/manifest.json"
     },
     {
-      "path": "user-edit-sample.csv",
-      "bytes": 115,
-      "sha256": "60fa800534782b15bbe509879f687cc7ec1d82ad1a548c5afdae710dc694aec7"
+      "id": "pharmacology",
+      "dir": "pharmacology",
+      "domain": "pharmacology/domain.toml",
+      "bundle": "pharmacology/bundle.json",
+      "manifest": "pharmacology/manifest.json"
+    },
+    {
+      "id": "physiology",
+      "dir": "physiology",
+      "domain": "physiology/domain.toml",
+      "bundle": "physiology/bundle.json",
+      "manifest": "physiology/manifest.json"
+    },
+    {
+      "id": "anatomy",
+      "dir": "anatomy",
+      "domain": "anatomy/domain.toml",
+      "bundle": "anatomy/bundle.json",
+      "manifest": "anatomy/manifest.json"
+    },
+    {
+      "id": "acupuncture",
+      "dir": "acupuncture",
+      "domain": "acupuncture/domain.toml",
+      "bundle": "acupuncture/bundle.json",
+      "manifest": "acupuncture/manifest.json"
+    },
+    {
+      "id": "shanghan",
+      "dir": "shanghan",
+      "domain": "shanghan/domain.toml",
+      "bundle": "shanghan/bundle.json",
+      "manifest": "shanghan/manifest.json"
+    },
+    {
+      "id": "diagnostics",
+      "dir": "diagnostics",
+      "domain": "diagnostics/domain.toml",
+      "bundle": "diagnostics/bundle.json",
+      "manifest": "diagnostics/manifest.json"
+    },
+    {
+      "id": "internal-med",
+      "dir": "internal-med",
+      "domain": "internal-med/domain.toml",
+      "bundle": "internal-med/bundle.json",
+      "manifest": "internal-med/manifest.json"
+    },
+    {
+      "id": "pathology",
+      "dir": "pathology",
+      "domain": "pathology/domain.toml",
+      "bundle": "pathology/bundle.json",
+      "manifest": "pathology/manifest.json"
     }
-  ],
-  "bundle": {
-    "path": "bundle.json",
-    "bytes": 7817,
-    "sha256": "3a98d49b38af1ee8dd457176d42e2e4a50d48dd3b0cfe026748eaf41dc63a7d5",
-    "rev": 3
-  }
+  ]
 }

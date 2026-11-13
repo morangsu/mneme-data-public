@@ -1,0 +1,157 @@
+{
+  "format": "mneme-public/1",
+  "rev": 1,
+  "schema_id": "internal-med",
+  "published_at": 1794562819371,
+  "entities": [
+    {
+      "id": "咳嗽",
+      "kind": "disease",
+      "group_id": "肺系",
+      "fields": {
+        "canonical": "咳嗽以肺气上逆为主",
+        "differential": "与喘证鉴别在有无气息急促",
+        "name": "咳嗽"
+      },
+      "relations": [
+        {
+          "target": "风寒袭肺",
+          "target_kind": "pattern",
+          "order": 1
+        },
+        {
+          "target": "风热犯肺",
+          "target_kind": "pattern",
+          "order": 2
+        },
+        {
+          "target": "痰湿蕴肺",
+          "target_kind": "pattern",
+          "order": 3
+        },
+        {
+          "target": "风寒袭肺",
+          "target_kind": "formula",
+          "role": "疏风散寒",
+          "amount": "三拗汤"
+        },
+        {
+          "target": "风热犯肺",
+          "target_kind": "formula",
+          "role": "疏风清热",
+          "amount": "桑菊饮"
+        },
+        {
+          "target": "痰湿蕴肺",
+          "target_kind": "formula",
+          "role": "燥湿化痰",
+          "amount": "二陈汤"
+        }
+      ],
+      "rev": 1,
+      "updated_at": 1794562819325,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "感冒",
+      "kind": "disease",
+      "group_id": "肺系",
+      "fields": {
+        "canonical": "感冒以肺卫症状为主",
+        "differential": "与温病早期鉴别在传变快慢",
+        "name": "感冒"
+      },
+      "relations": [
+        {
+          "target": "风寒束表",
+          "target_kind": "pattern",
+          "order": 1
+        },
+        {
+          "target": "风热犯表",
+          "target_kind": "pattern",
+          "order": 2
+        },
+        {
+          "target": "暑湿伤表",
+          "target_kind": "pattern",
+          "order": 3
+        },
+        {
+          "target": "风寒束表",
+          "target_kind": "formula",
+          "role": "辛温解表",
+          "amount": "荆防败毒散"
+        },
+        {
+          "target": "风热犯表",
+          "target_kind": "formula",
+          "role": "辛凉解表",
+          "amount": "银翘散"
+        },
+        {
+          "target": "暑湿伤表",
+          "target_kind": "formula",
+          "role": "清暑祛湿",
+          "amount": "新加香薷饮"
+        }
+      ],
+      "rev": 2,
+      "updated_at": 1794562819325,
+      "device": "public",
+      "deleted": false
+    },
+    {
+      "id": "胃痛",
+      "kind": "disease",
+      "group_id": "脾胃系",
+      "fields": {
+        "canonical": "胃痛以胃脘近心窝为主",
+        "differential": "与真心痛鉴别在疼痛部位",
+        "name": "胃痛"
+      },
+      "relations": [
+        {
+          "target": "寒邪客胃",
+          "target_kind": "pattern",
+          "order": 1
+        },
+        {
+          "target": "饮食伤胃",
+          "target_kind": "pattern",
+          "order": 2
+        },
+        {
+          "target": "肝气犯胃",
+          "target_kind": "pattern",
+          "order": 3
+        },
+        {
+          "target": "寒邪客胃",
+          "target_kind": "formula",
+          "role": "温胃散寒",
+          "amount": "良附丸"
+        },
+        {
+          "target": "饮食伤胃",
+          "target_kind": "formula",
+          "role": "消食导滞",
+          "amount": "保和丸"
+        },
+        {
+          "target": "肝气犯胃",
+          "target_kind": "formula",
+          "role": "疏肝理气",
+          "amount": "柴胡疏肝散"
+        }
+      ],
+      "rev": 3,
+      "updated_at": 1794562819325,
+      "device": "public",
+      "deleted": false
+    }
+  ],
+  "groups": [],
+  "checksum": "7f645b6032a1ca9d91558c312f7d50252a1f4b27e067d1614b8007e01ffd2601"
+}
