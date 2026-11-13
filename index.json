@@ -1,122 +1,163 @@
 {
   "schema": 1,
+  "_note": "mneme 公共库学科清单。软件只强依赖 id/name/bundle；其余字段可选。",
   "subjects": [
     {
-      "id": "materia-medica",
-      "name": "中药学",
-      "dir": "materia-medica",
-      "domain": "materia-medica/domain.toml",
-      "bundle": "materia-medica/bundle.json",
-      "manifest": "materia-medica/manifest.json",
-      "data": "materia-medica/data"
-    },
-    {
-      "id": "neijing",
-      "name": "内经",
-      "dir": "neijing",
-      "domain": "neijing/domain.toml",
-      "bundle": "neijing/bundle.json",
-      "manifest": "neijing/manifest.json",
-      "data": null
-    },
-    {
-      "id": "botany",
-      "name": "植物学",
-      "dir": "botany",
-      "domain": "botany/domain.toml",
-      "bundle": "botany/bundle.json",
-      "manifest": "botany/manifest.json",
-      "data": null
-    },
-    {
-      "id": "dietetics",
-      "name": "食疗学",
-      "dir": "dietetics",
-      "domain": "dietetics/domain.toml",
-      "bundle": "dietetics/bundle.json",
-      "manifest": "dietetics/manifest.json",
-      "data": null
-    },
-    {
-      "id": "formula",
-      "name": "方剂学",
-      "dir": "formula",
-      "domain": "formula/domain.toml",
-      "bundle": "formula/bundle.json",
-      "manifest": "formula/manifest.json",
-      "data": "formula/data"
-    },
-    {
-      "id": "pharmacology",
-      "name": "药理学",
-      "dir": "pharmacology",
-      "domain": "pharmacology/domain.toml",
-      "bundle": "pharmacology/bundle.json",
-      "manifest": "pharmacology/manifest.json",
-      "data": "pharmacology/data"
-    },
-    {
-      "id": "physiology",
-      "name": "生理学",
-      "dir": "physiology",
-      "domain": "physiology/domain.toml",
-      "bundle": "physiology/bundle.json",
-      "manifest": "physiology/manifest.json",
-      "data": "physiology/data"
+      "id": "acupuncture",
+      "name": "针灸学",
+      "dir": "acupuncture",
+      "bundle": "acupuncture/bundle.json",
+      "domain": "acupuncture/domain.toml",
+      "manifest": "acupuncture/manifest.json",
+      "data": "acupuncture/data",
+      "description": "经络腧穴、刺灸法与针灸治疗",
+      "entities": 4,
+      "updated": "2026-11-13"
     },
     {
       "id": "anatomy",
       "name": "解剖学",
       "dir": "anatomy",
-      "domain": "anatomy/domain.toml",
       "bundle": "anatomy/bundle.json",
+      "domain": "anatomy/domain.toml",
       "manifest": "anatomy/manifest.json",
-      "data": "anatomy/data"
+      "data": "anatomy/data",
+      "description": "人体结构、位置与毗邻关系",
+      "entities": 2,
+      "updated": "2026-11-13"
     },
     {
-      "id": "acupuncture",
-      "name": "针灸学",
-      "dir": "acupuncture",
-      "domain": "acupuncture/domain.toml",
-      "bundle": "acupuncture/bundle.json",
-      "manifest": "acupuncture/manifest.json",
-      "data": "acupuncture/data"
-    },
-    {
-      "id": "shanghan",
-      "name": "伤寒论",
-      "dir": "shanghan",
-      "domain": "shanghan/domain.toml",
-      "bundle": "shanghan/bundle.json",
-      "manifest": "shanghan/manifest.json",
-      "data": "shanghan/data"
+      "id": "botany",
+      "name": "植物学",
+      "dir": "botany",
+      "bundle": "botany/bundle.json",
+      "domain": "botany/domain.toml",
+      "manifest": "botany/manifest.json",
+      "data": null,
+      "description": "药用植物的形态、分类与鉴别特征",
+      "entities": 0,
+      "updated": "2026-11-13"
     },
     {
       "id": "diagnostics",
       "name": "中医诊断学",
       "dir": "diagnostics",
-      "domain": "diagnostics/domain.toml",
       "bundle": "diagnostics/bundle.json",
+      "domain": "diagnostics/domain.toml",
       "manifest": "diagnostics/manifest.json",
-      "data": "diagnostics/data"
+      "data": "diagnostics/data",
+      "description": "望闻问切四诊与辨证要点",
+      "entities": 5,
+      "updated": "2026-11-13"
+    },
+    {
+      "id": "dietetics",
+      "name": "食疗学",
+      "dir": "dietetics",
+      "bundle": "dietetics/bundle.json",
+      "domain": "dietetics/domain.toml",
+      "manifest": "dietetics/manifest.json",
+      "data": null,
+      "description": "食物的性味功效与食疗配伍",
+      "entities": 0,
+      "updated": "2026-11-13"
+    },
+    {
+      "id": "formula",
+      "name": "方剂学",
+      "dir": "formula",
+      "bundle": "formula/bundle.json",
+      "domain": "formula/domain.toml",
+      "manifest": "formula/manifest.json",
+      "data": "formula/data",
+      "description": "方剂的组成、功用主治与配伍意义",
+      "entities": 3,
+      "updated": "2026-11-13"
     },
     {
       "id": "internal-med",
       "name": "中医内科学",
       "dir": "internal-med",
-      "domain": "internal-med/domain.toml",
       "bundle": "internal-med/bundle.json",
+      "domain": "internal-med/domain.toml",
       "manifest": "internal-med/manifest.json",
-      "data": "internal-med/data"
+      "data": "internal-med/data",
+      "description": "内科病证的病因病机与辨证论治",
+      "entities": 3,
+      "updated": "2026-11-13"
+    },
+    {
+      "id": "materia-medica",
+      "name": "中药学",
+      "dir": "materia-medica",
+      "bundle": "materia-medica/bundle.json",
+      "domain": "materia-medica/domain.toml",
+      "manifest": "materia-medica/manifest.json",
+      "data": "materia-medica/data",
+      "description": "药材的性味归经、功效应用、用量禁忌与鉴别",
+      "entities": 37,
+      "updated": "2026-11-13"
+    },
+    {
+      "id": "neijing",
+      "name": "内经",
+      "dir": "neijing",
+      "bundle": "neijing/bundle.json",
+      "domain": "neijing/domain.toml",
+      "manifest": "neijing/manifest.json",
+      "data": "neijing/data",
+      "description": "《黄帝内经》原文与条文解析",
+      "entities": 2,
+      "updated": "2026-11-13"
     },
     {
       "id": "pathology",
       "name": "病理学",
       "dir": "pathology",
-      "domain": "pathology/domain.toml",
       "bundle": "pathology/bundle.json",
+      "domain": "pathology/domain.toml",
       "manifest": "pathology/manifest.json",
-      "data": "pathology/data"
+      "data": "pathology/data",
+      "description": "疾病的发生机制与形态学改变",
+      "entities": 5,
+      "updated": "2026-11-13"
+    },
+    {
+      "id": "pharmacology",
+      "name": "药理学",
+      "dir": "pharmacology",
+      "bundle": "pharmacology/bundle.json",
+      "domain": "pharmacology/domain.toml",
+      "manifest": "pharmacology/manifest.json",
+      "data": "pharmacology/data",
+      "description": "药物作用机制、代谢与不良反应",
+      "entities": 3,
+      "updated": "2026-11-13"
+    },
+    {
+      "id": "physiology",
+      "name": "生理学",
+      "dir": "physiology",
+      "bundle": "physiology/bundle.json",
+      "domain": "physiology/domain.toml",
+      "manifest": "physiology/manifest.json",
+      "data": "physiology/data",
+      "description": "人体各系统的正常功能与调节",
+      "entities": 2,
+      "updated": "2026-11-13"
+    },
+    {
+      "id": "shanghan",
+      "name": "伤寒论",
+      "dir": "shanghan",
+      "bundle": "shanghan/bundle.json",
+      "domain": "shanghan/domain.toml",
+      "manifest": "shanghan/manifest.json",
+      "data": "shanghan/data",
+      "description": "六经辨证与经方条文",
+      "entities": 3,
+      "updated": "2026-11-13"
     }
-  ]
+  ],
+  "count": 13
 }
